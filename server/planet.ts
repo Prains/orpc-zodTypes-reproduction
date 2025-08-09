@@ -1,11 +1,11 @@
 import { os } from "@orpc/server";
-import { PlanetFindManyArgsSchema } from "./prisma/generated/zod";
 import { PrismaClient } from "@prisma/client";
 import z from "zod";
+import { PlanetFindManySchema } from "./prisma/generated/schemas";
 
 const prisma = new PrismaClient();
 
-export const UntypedClientList = os.input(PlanetFindManyArgsSchema).handler(async ({ input }) => {
+export const UntypedClientList = os.input(PlanetFindManySchema).handler(async ({ input }) => {
   // Input IS typed here !!
   // But won't be typed in the client
 
