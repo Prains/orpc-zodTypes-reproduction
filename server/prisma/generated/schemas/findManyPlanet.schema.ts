@@ -1,9 +1,9 @@
-import type { Prisma } from '@prisma/client';
-import { z } from 'zod';
-import { PlanetOrderByWithRelationInputObjectSchema } from './objects/PlanetOrderByWithRelationInput.schema';
-import { PlanetWhereInputObjectSchema } from './objects/PlanetWhereInput.schema';
-import { PlanetWhereUniqueInputObjectSchema } from './objects/PlanetWhereUniqueInput.schema';
-import { PlanetScalarFieldEnumSchema } from './enums/PlanetScalarFieldEnum.schema';
+import type { Prisma } from "@prisma/client";
+import { z } from "zod";
+import { PlanetOrderByWithRelationInputObjectSchema } from "./objects/PlanetOrderByWithRelationInput.schema";
+import { PlanetWhereInputObjectSchema } from "./objects/PlanetWhereInput.schema";
+import { PlanetWhereUniqueInputObjectSchema } from "./objects/PlanetWhereUniqueInput.schema";
+import { PlanetScalarFieldEnumSchema } from "./enums/PlanetScalarFieldEnum.schema";
 
 // Select schema needs to be in file to prevent circular imports
 //------------------------------------------------------

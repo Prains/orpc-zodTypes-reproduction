@@ -7,12 +7,12 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@orpc/client": "^1.7.10",
-    "@orpc/server": "^1.7.10",
-    "prisma-zod-generator": "^1.2.0",
-    "zod": "^4.0.15"
+    "@orpc/client": "^1.7.11",
+    "@orpc/server": "^1.7.11",
+    "prisma-zod-generator": "^1.3.0",
+    "zod": "^4.0.16"
   }
 }

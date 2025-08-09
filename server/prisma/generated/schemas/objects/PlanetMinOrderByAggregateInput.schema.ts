@@ -1,13 +1,15 @@
 import { z } from 'zod';
-import { SortOrderSchema } from '../enums/SortOrder.schema';
+import type { Prisma } from '@prisma/client';
+import { SortOrderSchema } from '../enums/SortOrder.schema'
 
-const Schema = z
-  .object({
-    id: SortOrderSchema.optional(),
-    name: SortOrderSchema.optional(),
-    createdAt: SortOrderSchema.optional(),
-    updatedAt: SortOrderSchema.optional(),
-  })
-  .strict();
+// prettier-ignore
+const Schema = z.object({
+  id: SortOrderSchema.optional(),
+  name: SortOrderSchema.optional(),
+  createdAt: SortOrderSchema.optional(),
+  updatedAt: SortOrderSchema.optional()
+}).strict();
 
-export const PlanetMinOrderByAggregateInputObjectSchema = Schema;
+ type __PrismaAlias = Prisma.JsonValue | Prisma.InputJsonValue;
+
+ export const PlanetMinOrderByAggregateInputObjectSchema = Schema

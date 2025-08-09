@@ -1,6 +1,5 @@
 import { z } from 'zod';
-import { PlanetWhereUniqueInputObjectSchema } from './objects/PlanetWhereUniqueInput.schema';
+import { PlanetSelectObjectSchema } from './objects/PlanetSelect.schema.js';
+import { PlanetWhereUniqueInputObjectSchema } from './objects/PlanetWhereUniqueInput.schema'
 
-export const PlanetDeleteOneSchema = z.object({
-  where: PlanetWhereUniqueInputObjectSchema,
-});
+export const PlanetDeleteOneSchema = z.object({ select: PlanetSelectObjectSchema.optional(),  where: PlanetWhereUniqueInputObjectSchema  })
